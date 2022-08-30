@@ -1,0 +1,6 @@
+batch_size: 30
+num_workers: 0
+
+datasets:
+  context_max_len: 256
+  response_max_len: 100

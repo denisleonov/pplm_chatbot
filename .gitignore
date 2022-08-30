@@ -1,0 +1,13 @@
+.DS_Store
+.vscode/
+.idea/
+__pycache__/
+data/*
+!data/bow/
+lightning_logs/
+model_weights/
+.pytest_cache/
+configs/chatbot_configs/logger.yaml
+configs/discriminator_configs/logger.yaml
+.DS_Store
+weights/bart_exp1_ep49.ckpt

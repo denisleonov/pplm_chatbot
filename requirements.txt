@@ -1,0 +1,11 @@
+pandas>=1.1.0
+omegaconf>=2.0.0
+PyYAML>=5.1
+pytorch_lightning @ git+git://github.com/PyTorchLightning/pytorch-lightning.git
+rouge>=1.0.0
+scikit-learn>=0.23.1
+torch>=1.6.0
+transformers>=3.0.2
+unidecode>=1.1.1
+wandb>=0.9.4
+comet_ml>=3.1.15

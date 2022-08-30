@@ -1,0 +1,7 @@
+batch_size: 3
+num_neg_samples: 0
+num_workers: 0
+
+datasets:
+  context_max_len: 256
+  response_max_len: 100

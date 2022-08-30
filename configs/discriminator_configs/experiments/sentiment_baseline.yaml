@@ -1,0 +1,15 @@
+name: sentiment
+model: gpt2
+
+# AdamW params
+lr: 0.00005
+warmup: 50
+weight_decay: 0.05
+# losses
+label_smoothing: 0.1
+
+datasets:
+  use_taskmaster: false
+  use_dailydialog: true
+  use_personachat: false
+  use_dailydialog_emotions: true

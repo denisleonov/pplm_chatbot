@@ -1,0 +1,23 @@
+
+dd_topics:
+    num_classes: 10
+    classification_type: 'multiclass'
+    multi_class: 'ovr' # one of ['ovr','ovo', 'no'] - for multiclass scoring. ovr means one-with-rest ,
+                    # ovo - all possible pairwise combinations, no - don't use (for multilabel)
+    average: 'weighted' # for metrics: micro, macro or weighted
+    size: 'small' # one of ['small', 'big'] - if big, head has 768x768 extra layer
+
+    treshold: 0.5
+    classes:
+        Attitude&Emotion: 0
+        Tourism: 1
+        Culture&Education: 2
+        Relationship: 3
+        Work: 4
+        Health: 5
+        Ordinary_Life: 6
+        Finance: 7
+        Politics: 8 
+        School_Life: 9
+
+    path_to_weights: 'weights/topics'

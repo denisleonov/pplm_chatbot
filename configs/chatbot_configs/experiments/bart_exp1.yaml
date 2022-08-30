@@ -1,0 +1,23 @@
+experiment_name: bart_exp1
+
+# evaluation
+top_p: 0.9
+
+# see available models in model.model.AVAILABLE_MODELS
+model: facebook/bart-base-local
+use_cls_head: True 
+
+# data
+batch_size: 10
+num_neg_samples: 2
+# AdamW params
+lr: 0.00005
+warmup: 50
+weight_decay: 0.05
+# losses
+label_smoothing: 0.1
+ul_alpha: 0.25
+
+# note that vals from this cfg have the highest priority, i.e response_max_len changes to 75
+datasets:
+  response_max_len: 20

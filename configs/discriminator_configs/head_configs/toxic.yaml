@@ -1,0 +1,27 @@
+
+toxic:
+    name: toxic
+
+    num_classes: 6
+    classification_type: 'multilabel' # one of ['multilabel', 'multiclass', 'binary'] (binary is not supported yet)
+    multi_class: 'no' # one of ['ovr','ovo', 'no'] - for multiclass scoring. ovr means one-with-rest ,
+                    # ovo - all possible pairwise combinations, no - don't use (for multilabel)
+    average: 'weighted' # for metrics: micro, macro or weighted
+
+    size: 'small' # one of ['small', 'big'] - if big, head has 768x768 extra layer
+    treshold: 0.5
+
+    classes:
+        toxic: 0
+        severe_toxic: 1
+        obscene: 2
+        threat: 3
+        insult: 4
+        identity_hate: 5
+
+    path_to_data: 'data/discriminator_finetuning/toxic'
+    path_to_weights: 'weights/toxic'
+    files:
+        train: 'data/discriminator_finetuning/toxic/train.csv'
+        valid: 'data/discriminator_finetuning/toxic/valid.csv'
+        test: 'data/discriminator_finetuning/toxic/test.csv'

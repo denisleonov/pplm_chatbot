@@ -1,0 +1,23 @@
+model: facebook/bart-base #gpt2
+
+use_cls_head: true
+
+colored: false
+# heads
+# topics
+pplm: false #true
+window_length: 0
+pplm_iterations: 3
+pplm_horizon: 1
+pplm_stepsize: 0.1
+kl_scale: 0.01
+gamma: 1.5
+gm_scale: 0.9
+fusion_scale: 0.9
+
+top_p: 0.9
+temperature: 1.0
+history_size: 128
+max_responce_len: 20
+
+use_cache: false
